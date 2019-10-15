@@ -1,0 +1,220 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - 
+GENERAL
+- - - - - - - - - - - - - - - - - - - - - - - - */
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.primary-button {
+    padding: 10px 30px;
+    border-radius: 30px;
+    background: #333;
+    color: white;
+    border: 1px solid #333;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.secondary-button {
+    padding: 10px 30px;
+    border-radius: 30px;
+    background: #777;
+    color: white;
+    border: 1px solid #777;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - 
+HEADER
+- - - - - - - - - - - - - - - - - - - - - - - - */
+header {
+    height: 80px;
+    background: #333;
+}
+
+header nav .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+header .logo {
+    background: url('./assets/logo.svg');
+    height: 30px;
+    width: 30px;
+    background-size: 30px;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+
+header li {
+    color: white;
+    list-style: none;
+    margin: 0;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - 
+HERO
+- - - - - - - - - - - - - - - - - - - - - - - - */
+.hero {
+    background: linear-gradient(
+            rgba(255, 255, 255, 0.9),
+            rgba(255, 255, 255, 0.4)
+        ),
+        url('https://images.unsplash.com/photo-1458668383970-8ddd3927deed?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1047&q=80');
+    background-position: 50% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    padding-top: 10vh;
+}
+
+.hero h1 {
+    font-size: 80px;
+    font-weight: 300;
+    margin-bottom: 1px;
+}
+.hero h2 {
+    margin-top: 0;
+}
+
+.hero p {
+    max-width: 500px;
+    line-height: 1.6;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - 
+MAIN CONTENT
+- - - - - - - - - - - - - - - - - - - - - - - - */
+.main-content {
+    padding: 80px 0;
+}
+
+.main-content p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - 
+FOOTER
+- - - - - - - - - - - - - - - - - - - - - - - - */
+footer {
+    height: 300px;
+    background: #333;
+}
+
+
+/*HAMBURGER MENU CSS*/
+    .hamburgercontainer {
+        display: inline-block;
+        cursor: pointer;
+        padding: 0;
+        cursor: pointer;
+    }
+    .bar1, .bar2, .bar3 {
+        width: 28px;
+        height: 3px;
+        background-color: white;
+        margin: 4px 0;
+        transition: 0.1s;
+    }
+    .hamburger-close .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-5px, 6px);
+        background-color: white;
+    }
+    .hamburger-close .bar2 {
+        opacity: 0;
+    }
+    .hamburger-close .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-4px, -5px);
+        background-color: white;
+    }
+    .hamburger-opened {
+        background-color: grey;
+    }
+    .hamburger-menu-items {
+        list-style-type: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #333;
+        z-index: 10;
+        color: white;
+        border-bottom: 1px;
+        padding-left: 15px;
+    }
+    .mobile-ham-submenu, .mobile-menu-headers {
+        list-style-type: none;
+        color: white;
+        border-bottom: 1px solid #C7C7CC;
+        width: 95%;
+        padding: 5px;
+    }
+    .mobile-ham-submenu>a {
+        color: black;
+        font-weight: normal;
+    }
+    .mobile-ham-ul {
+        padding-left: 0;
+        font-weight: normal;
+    }
+    .mobile-menu-headers>a {
+        color: white;
+    }
+    .mobile-ham-submenu-link {
+        display: block;
+        text-transform: lowercase;
+    }
+    .mobile-ham-submenu-link:first-letter {
+        text-transform: uppercase;
+    }
+    .mobile-ham-submenu-chevron {
+        color: #C7C7CC;
+        padding-top: 3px;
+        padding-right: 15px;
+    }
+
+    .mobile-nav-head {
+        text-align: center;
+        font-size: 21px;
+        background-color: #4a4845;
+        color: white;
+        margin: 0;
+        list-style-type: none;
+    }
+    .hamburger-menu-container {
+        padding: 15px;
+    }
+    .hamburger-menu-container {
+        display:  none;
+    }
+    @media only screen and (max-width: 727px){
+        .menu-items {
+            display: none;
+        }
+        .hamburger-menu-container {
+            display: block;
+        }
+    }
